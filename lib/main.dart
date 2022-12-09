@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smartshowerapp/screens/onboardingPage.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,8 +11,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(
-            backgroundColor: Color(0x21262d),
-            appBarTheme: AppBarTheme(backgroundColor: Color(0x21262d))),
+            backgroundColor: const Color(0x0021262d),
+            appBarTheme: const AppBarTheme(backgroundColor: Color(0x0021262d))),
         home: OnBoardingPage(),
       );
 }

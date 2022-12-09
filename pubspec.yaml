@@ -33,6 +33,7 @@ flutter:
      - assets/estadisticas.png
      - assets/logro.png
      - assets/search.svg
+     - assets/gradient.jpg
   # fonts:
   #   - family: Schyler
   #     fonts:

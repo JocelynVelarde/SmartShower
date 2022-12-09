@@ -17,8 +17,22 @@ class HomePage extends StatelessWidget {
         body: CustomScrollView(
           slivers: [
             SliverAppBar.medium(
-                flexibleSpace: Container(
-                  decoration: BoxDecoration(
+                titleTextStyle: TextStyle(color: Colors.white, fontSize: 24),
+                flexibleSpace: FlexibleSpaceBar(
+                  title: Text(
+                    'Welcome to your Smart Shower',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                    ),
+                    textAlign: TextAlign.right,
+                  ),
+                  background: Image.asset(
+                    'assets/gradient.jpg',
+                    fit: BoxFit.cover,
+                  ),
+
+                  /*decoration: const BoxDecoration(
                     // LinearGradient
                     gradient: LinearGradient(
                       begin: Alignment.bottomLeft,
@@ -30,14 +44,12 @@ class HomePage extends StatelessWidget {
                         Colors.blue,
                       ],
                     ),
-                  ),
+                  ),*/
                 ),
                 leading: IconButton(
                   onPressed: () {},
                   icon: Icon(Icons.menu),
                 ),
-                title: Text('Home'),
-                titleTextStyle: TextStyle(fontSize: 20, color: Colors.white),
                 actions: [
                   IconButton(
                     onPressed: () {},
@@ -66,7 +78,7 @@ class HomePage extends StatelessWidget {
         bottomNavigationBar: GNav(
           backgroundColor: Color.fromARGB(137, 34, 34, 34),
           color: Colors.white,
-          activeColor: Colors.blue.shade500,
+          activeColor: Color(0xFFB74093),
           tabs: [
             GButton(
                 icon: Icons.newspaper,

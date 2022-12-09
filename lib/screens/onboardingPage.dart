@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:smartshowerapp/screens/homepage.dart';
-import 'package:smartshowerapp/widgets/button.dart';
 
 class OnBoardingPage extends StatelessWidget {
   @override
@@ -46,7 +45,7 @@ class OnBoardingPage extends StatelessWidget {
           next: Icon(Icons.arrow_forward),
           dotsDecorator: getDotDecoration(),
           onChange: (index) => print('Page $index selected'),
-          globalBackgroundColor: Color.fromARGB(45, 45, 68, 1000),
+          globalBackgroundColor: Color.fromARGB(137, 34, 34, 34),
           dotsFlex: 0,
           nextFlex: 0,
           // isProgressTap: false,
@@ -66,7 +65,7 @@ class OnBoardingPage extends StatelessWidget {
 
   DotsDecorator getDotDecoration() => DotsDecorator(
         color: Color.fromARGB(255, 255, 255, 255),
-        activeColor: Colors.blue,
+        activeColor: Colors.blue.shade500,
         size: Size(10, 10),
         activeSize: Size(22, 10),
         activeShape: RoundedRectangleBorder(

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:smartshowerapp/screens/connectPage.dart';
 import 'package:smartshowerapp/screens/onboardingPage.dart';
+import 'package:smartshowerapp/screens/pointsPage.dart';
+import 'package:smartshowerapp/screens/settingsPage.dart';
 import 'package:smartshowerapp/widgets/button.dart';
 
 import '../main.dart';
@@ -31,23 +34,45 @@ class HomePage extends StatelessWidget {
           backgroundColor: Color.fromARGB(137, 34, 34, 34),
           color: Colors.white,
           activeColor: Colors.blue.shade500,
-          tabs: const [
+          tabs: [
             GButton(
-              icon: Icons.newspaper,
-              text: "Connect",
-            ),
+                icon: Icons.newspaper,
+                text: "Connect",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ConnectPage()),
+                  );
+                }),
             GButton(
-              icon: Icons.home,
-              text: "Home",
-            ),
+                icon: Icons.home,
+                text: "Home",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+                }),
             GButton(
-              icon: Icons.emoji_events,
-              text: "Points",
-            ),
+                icon: Icons.emoji_events,
+                text: "Points",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const PointsPage()),
+                  );
+                }),
             GButton(
-              icon: Icons.settings,
-              text: "Settings",
-            ),
+                icon: Icons.settings,
+                text: "Settings",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SettingsPage()),
+                  );
+                }),
           ],
         ),
       );

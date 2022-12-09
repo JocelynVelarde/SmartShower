@@ -14,10 +14,43 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: Color.fromARGB(137, 34, 34, 34),
-        appBar: AppBar(
-          title: Text(MyApp.title),
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar.medium(
+                flexibleSpace: Container(
+                  decoration: BoxDecoration(
+                    // LinearGradient
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+
+                      // colors for gradient
+                      colors: [
+                        Colors.deepPurpleAccent,
+                        Colors.blue,
+                      ],
+                    ),
+                  ),
+                ),
+                leading: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.menu),
+                ),
+                title: Text('Home'),
+                titleTextStyle: TextStyle(fontSize: 20, color: Colors.white),
+                actions: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.search),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.more_vert),
+                  ),
+                ]),
+          ],
         ),
-        body: Center(
+        /*Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -29,7 +62,7 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        ),*/
         bottomNavigationBar: GNav(
           backgroundColor: Color.fromARGB(137, 34, 34, 34),
           color: Colors.white,

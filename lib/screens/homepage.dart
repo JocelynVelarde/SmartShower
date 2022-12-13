@@ -4,6 +4,7 @@ import 'package:smartshowerapp/screens/connectPage.dart';
 import 'package:smartshowerapp/screens/onboardingPage.dart';
 import 'package:smartshowerapp/screens/pointsPage.dart';
 import 'package:smartshowerapp/screens/settingsPage.dart';
+import 'package:aurora/aurora.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,12 +34,11 @@ class HomePage extends StatelessWidget {
                 height: 160,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Colors.black12,
                   image: DecorationImage(
-                    image: NetworkImage(
-                      "https://images.unsplash.com/photo-1607355739828-0bf365440db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1444&q=80",
+                    image: AssetImage(
+                      "assets/grafica.png",
                     ),
-                    fit: BoxFit.cover,
+                    fit: BoxFit.scaleDown,
                   ),
                 ),
               ),

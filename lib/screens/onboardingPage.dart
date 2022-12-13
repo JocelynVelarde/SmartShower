@@ -1,3 +1,4 @@
+import 'package:aurora/aurora.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:smartshowerapp/screens/homepage.dart';
@@ -46,6 +47,7 @@ class OnBoardingPage extends StatelessWidget {
           dotsDecorator: getDotDecoration(),
           onChange: (index) => print('Page $index selected'),
           globalBackgroundColor: Color.fromARGB(137, 34, 34, 34),
+
           dotsFlex: 0,
           nextFlex: 0,
           // isProgressTap: false,
@@ -79,6 +81,6 @@ class OnBoardingPage extends StatelessWidget {
         bodyTextStyle: TextStyle(fontSize: 20, color: Colors.white),
         //descriptionPadding: EdgeInsets.all(16).copyWith(bottom: 0),
         imagePadding: EdgeInsets.all(24),
-        pageColor: Color(0x21262d),
+        pageColor: Color.fromARGB(137, 34, 34, 34),
       );
 }

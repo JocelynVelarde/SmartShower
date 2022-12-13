@@ -34,6 +34,11 @@ flutter:
      - assets/logro.png
      - assets/search.svg
      - assets/gradient.jpg
+     - assets/agua.png
+     - assets/corazon.png
+     - assets/cuota.png
+     - assets/musica.png
+     - assets/calendario.png
   # fonts:
   #   - family: Schyler
   #     fonts:
